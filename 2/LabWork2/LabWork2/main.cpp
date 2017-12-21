@@ -34,7 +34,7 @@ int getVal()
 }
 // непосредственно вычисления 
 // первая функция 
-double functionFx (int x )
+double functionFx(int x)
 {
 	double res = sqrt(pow(x, 2) + 16) / (x + 2);
 	return res;
@@ -82,7 +82,7 @@ int main()
 			cin >> lChoise;
 
 		} while (lChoise < 0 || lChoise > 1);
-		
+
 		if (lChoise == 1)
 		{
 			cout << "Введите значение x" << endl;
@@ -92,7 +92,7 @@ int main()
 			a = getVal();
 
 			cout << "Введите значение y" << endl;
-			b= getVal();
+			b = getVal();
 
 			double resultFx = functionFx(x);
 			cout << "Результат выполнения F(x)  =" << resultFx << endl;
@@ -100,7 +100,7 @@ int main()
 			double resultFx2 = functionFx2(x, a, b);
 			cout << "Результат выполнения Fx(x,a,b)  = " << resultFx2 << endl;
 		}
-		
+
 	} while (lChoise != 0);
 
 	cout << "Нажмите любую клавишу для продолжения ...." << endl;
