@@ -1,3 +1,4 @@
+#define _USE_MATH_DEFINES
 //для cout cin
 #include <iostream>
 // для getch
@@ -36,13 +37,13 @@ int getVal()
 // первая функция 
 double functionFx(int x)
 {
-	double res = sqrt(pow(x, 2) + 16) / (x + 2);
+	double res = (pow(M_E, x + 3.1) + 2) / (x + 6.1);
 	return res;
 }
 // вторая  функция 
 double functionFx2(int x, int a, int b)
 {
-	double res = (x + sqrt(sin(a) + 3) + b) / (pow(x, 2) + sqrt(sin(a) + 3));
+	double res = (pow(a, 1 / 3) + 2 * x * tan(b) + 3) / (2 * x + tan(b) + 3);		
 	return res;
 }
 
@@ -57,6 +58,7 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	cout << "**************************************************" << endl;
 	cout << "Лабораторная работа № 2 " << endl;
+	cout << "Бурятинский Алексей Витальевич. Вариант №7. Группа ЗИНРБ-1" << endl;
 	cout << "**************************************************" << endl;
 
 	cout << "Выберите оперцию :" << endl;
